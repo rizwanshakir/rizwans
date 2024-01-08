@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Toggle switch styles */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* Light mode styles */
+.bg-primary {
+  background-color: #ffffffee;
+  /* background-color: rgb(17, 24, 39); */
+
+}
+.bg-primary1 {
+  background-color: rgba(173, 177, 184, 0.521);
+}
+
+.text-primary {
+  color: #1a202c;
+}
+
+/* Dark mode styles */
+/* .dark .toggle-icon {
+  transform: rotate(180deg);
+} */
+.dark .bg-primary {
+  background-color: #2d3748;
+}
+
+.dark .text-primary {
+  color: #e2e8f0;
+}
+
+.dark .bg-secondary {
+  background-color: #154aa5;
+}
+
+.dark .text-secondary {
+  color: #cbd5e0;
+}
+.dark .text-second {
+  color: #1178bd;
+}
+.dark .text-sec3 {
+  color: #081b27;
+}
+/* .dark .bg-primary {
+  background-color: #7245bbb2;
+}
+
+.dark .text-primary {
+  color: #E2E8F0;
+}
+
+.dark .bg-secondary {
+  background-color: #1A202C;
+}
+
+.dark .text-secondary {
+  color: #CBD5E0;
+} */
